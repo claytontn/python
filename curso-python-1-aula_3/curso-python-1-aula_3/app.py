@@ -11,7 +11,7 @@ def exibir_nome_do_programa():
 ██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║  ███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
 ╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░  
 """)
-    
+
 def exibir_opcoes():
     print('1. Cadastrar restaurante')
     print('2. Listar restaurantes')
@@ -68,15 +68,6 @@ def escolher_opcao():
     except:
         opcao_invalida()
 
-"""é importante entender que quando criamos um arquivo com a extensão .py, podemos ter duas opções.
-A primeira: podemos indicar para o Python que esse é o arquivo principal do programa. Nós não queremos que
-ele seja importado por outros arquivos Python para que seja executado, assim como fizemos com o import os.
-Queremos que ele seja o arquivo principal da nossa aplicação. E podemos sinalizar isso para o Python,
-dizendo: "Python, este é o arquivo principal". Vamos fazer isso agora.
-Quando pedimos para que um programa Python seja executado, o interpretador cria uma
-variável chamada __name__. Se o __name__ for __main__ (principal, em inglês), significa que esse
-código não será importado por outros scripts de código Python, e ele será o programa principal."""
-
 def main():
     os.system('cls')
     exibir_nome_do_programa()
@@ -85,6 +76,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
- 
